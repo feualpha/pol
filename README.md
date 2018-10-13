@@ -28,6 +28,14 @@ pool.with_pool do |pooled_obj|
 end
 ```
 
+you can set clear_block that called for every object in pool when the pool want to be cleared. just to make sure nothing is leaked
+
+```ruby
+pool.set_clear_block{ |pooled_obj| pooled_obj.some_method }
+pool.clear_pool
+```
+
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.

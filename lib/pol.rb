@@ -31,6 +31,10 @@ class Pol
     end
   end
 
+  def set_clear_block(&block)
+    self.clear_block = block
+  end
+
   def clear_pool
     if self.clear_block.nil?
       self.queue.clear
