@@ -1,4 +1,4 @@
-# Pol
+# Pol [![Build Status](https://travis-ci.org/feualpha/pol.svg?branch=master)](https://travis-ci.org/feualpha/pol)
 
 Ruby Unbounded pooling object
 
